@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+.Header{
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    height:60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px
+}
+.logo{
+    margin-left:100px;
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo span{
+    color: gold;
+    font-family: 'Bungee', cursive;
+    
+}
+.headerContent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:600px;
+    color: #2a2a2a;
+    font-size:16px;
+    font-weight: bold
+}
+.headerContent div{
+    margin-left:25px
+}
+.headerContent div a{
+    color: #2a2a2a;
+    text-decoration: none;
+    cursor: pointer;
+}
+.becomeAClient{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    border: 2px solid #202020;
+    padding: 3px 10px 3px 10px;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 50px    
+}

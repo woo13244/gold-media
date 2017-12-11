@@ -1,0 +1,108 @@
+.Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width:100%
+}
+.homeVideo{
+    width: 100%;
+    height: 730px;
+    background-image: url("https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/13173619/harry-caray-gif-32-half-frames.gif");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    line-height: 55px;
+    opacity: .9
+}
+.homeVideoText{
+    width: 66%;
+    font-size: 34px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 130px;
+    margin-top: 140px
+}
+.homeVideoLink{
+    border: 2px solid gold;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px;
+    height: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.homeVideoText span{
+    color: gold;
+    border-bottom: 1px solid gold
+}
+.homeVideoLink a{
+    text-decoration: none;
+    color: gold;
+    padding: 0px 15px 0px 15px;
+}
+.homeArrow{
+    margin-top: 40px;
+}
+.homeRecentWork{
+    border: 2px solid red;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.recentWorkTitle{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 75px;
+    margin-bottom: 50px
+}
+.recentWorkExamples{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+.exampleOne{
+    width: 48.5%;
+    border: 2px solid blue
+}
+.exampleOneDetails{
+    padding-left: 20px;
+    margin-top: 20px;
+    border-left: 2px solid #efeed8
+}
+.exampleOneDetails div{
+    margin-bottom: 10px
+}
+.exampleOneImage{
+    height: 310px;
+    background-image: url('https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/15150733/Bud-Harry-Caray.jpg');
+    background-size: 100%;
+}
+.exampleTitleGrey{
+    color: #39483C;
+    font-size: 28px;
+    font-weight: bolder
+}
+.exampleTwo{
+    width: 48.5%;
+    border:2px solid blue
+}
+.exampleTwoImage{
+    height: 310px;
+    background-image: url('https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/04/21161349/Option2.jpg');
+    background-size: 100%
+}
+.exampleTitle{
+    color: rgb(70, 136, 241);
+    font-size: 20px;
+    font-weight: bolder;
+}
