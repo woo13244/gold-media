@@ -102,6 +102,7 @@ export default class Home extends Component{
                     </div>
                     <div className="exploreServices"><a>Explore Services</a></div>
                 </div>
+                <div>bert</div>
             </div>
         )
     }

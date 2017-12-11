@@ -142,7 +142,7 @@
 }
 .clientLogoList{
     display: flex;
-    width: 70%;
+    width: 75%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap
