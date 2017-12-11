@@ -4,7 +4,8 @@
     justify-content: center;
     align-items: center;
     /* border: 2px solid red; */
-    width:100%
+    width:100%;
+    margin-top: 60px
 }
 .homeVideo{
     width: 100%;
@@ -37,6 +38,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer
 
 }
 .homeVideoText span{
@@ -52,7 +54,6 @@
     margin-top: 40px;
 }
 .homeRecentWork{
-    border: 2px solid red;
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@
     font-size: 40px;
     font-weight: bolder;
     margin-top: 75px;
-    margin-bottom: 50px
+    margin-bottom: 40px
 }
 .recentWorkExamples{
     width: 100%;
@@ -71,16 +72,14 @@
     justify-content: space-between
 }
 .exampleOne{
-    width: 48.5%;
-    border: 2px solid blue
-}
+    width: 48.5%;}
 .exampleOneDetails{
     padding-left: 20px;
     margin-top: 20px;
     border-left: 2px solid #efeed8
 }
 .exampleOneDetails div{
-    margin-bottom: 10px
+    margin-bottom: 15px
 }
 .exampleOneImage{
     height: 310px;
@@ -94,7 +93,6 @@
 }
 .exampleTwo{
     width: 48.5%;
-    border:2px solid blue
 }
 .exampleTwoImage{
     height: 310px;
@@ -105,4 +103,101 @@
     color: rgb(70, 136, 241);
     font-size: 20px;
     font-weight: bolder;
+}
+.exampleTwoDetails{
+    padding-left: 20px;
+    margin-top:20px;
+    border-left: 2px solid #efeed8
+    
+}
+.exampleTwoDetails div{
+    margin-bottom: 15px
+}
+.moreExamplesLink{
+    border: 2px solid rgb(70, 136, 241);
+    padding: 3px 25px 3px 25px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 25px;
+    margin-bottom:90px
+}
+.moreExamplesLink a{
+    color: rgb(70, 136, 241);
+}
+.clientsList{
+    background-color: rgb(56, 56, 56);
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px
+}
+.clientListTitle{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 50px
+}
+.clientLogoList{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+.clientLogoList img{
+    width: 22%;
+    margin-top: 35px
+}
+.servicesList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.serviceListTitle{
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 50px
+}
+.serviceLogoList{
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap
+}
+.serviceLogoList div{
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: rgb(56, 56, 56);
+}
+.serviceLogoList div div{
+    width:100%;
+    font-size: 18px
+}
+.serviceLogoList div img{
+    width: 45%;
+    margin-top: 35px
+}
+.exploreServices{
+    border: 2px solid rgb(255, 0, 179);
+    border-radius: 20px 20px 20px 20px;    
+    padding: 5px 25px 5px 25px;
+    margin-top: 35px;
+    margin-bottom: 50px
+}
+.exploreServices a{
+    font-style: none;
+    color: rgb(255, 0, 179);;
+    font-weight: bolder;
+    font-size: 18px;
 }
