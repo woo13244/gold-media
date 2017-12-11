@@ -97,7 +97,8 @@
 .exampleTwoImage{
     height: 310px;
     background-image: url('https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/04/21161349/Option2.jpg');
-    background-size: 100%
+    background-size: 100%;
+    background-position: center
 }
 .exampleTitle{
     color: rgb(70, 136, 241);

@@ -27,6 +27,7 @@
 .logo span{
     color: gold;
     font-family: 'Bungee', cursive;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     
 }
 .headerContent{
@@ -55,4 +56,120 @@
     margin-right: 50px;
     cursor: pointer
     
+}
+.contactForm{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    flex-direction: column;
+    background-color: #dddddd
+}
+.formTitle{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 50px 0px 30px 0px;
+    margin-bottom: 10px
+}
+.fieldsetRow1{
+    width:33%
+}
+.group1{
+    display: flex;
+    width:85vw;
+    font-size: 16px;
+    font-weight: bolder;
+    flex-direction: column
+}
+.group1 div{
+    display: flex;
+    width:100%
+}
+.group1 div div{
+    width: 33%
+}
+.group1Title{
+    width:100%;
+    margin-bottom: 20px
+}
+.formRow1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
+.formRow1 div{
+    width: 33%;
+}
+.formRow1 div input{
+    margin-right: 10px
+}
+.group2{
+    display: flex;
+    justify-content: space-between;
+    width:85vw;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.group2 div{
+    width: 33%;
+}
+.group2 div input{
+    margin-right: 10px
+}
+.group2 div span{
+    color: #069BFA
+}
+.formInputContainer{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold
+}
+.formInputContainer div{
+    margin-top: 25px
+}
+.formInputLeft{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.formInputLeft input{
+    /* height: 40px; */
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 10px;
+    color: gray
+}
+.formInputLeft div span{
+    color: darkred
+}
+.normalInput{
+    height: 40px;
+}
+.bert{
+    height: 150px
+}
+.emailList{
+    display: flex;
+    width: 85%;;
+    margin-top: 25px;
+    font-size: 16px
+}
+.emailList input{
+    margin-right: 10px
+}
+.emailList div span{
+    color: darkred
+}
+.formSubmit{
+    color: #222222;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #222222;
+    border-radius: 15px 15px 15px 15px;
+    padding: 2px 25px 2px 25px;
+    margin: 80px 0px 60px 0px
 }

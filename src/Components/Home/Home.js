@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
-import Header from '../Header/Header'
+import React, {Component} from 'react';
+import Header from '../Header/Header';
 import './Home.css';
-import FontAwesome from 'react-fontawesome'
-import {Helmet} from 'react-helmet'
-
+import FontAwesome from 'react-fontawesome';
+import {Helmet} from 'react-helmet';
+import Footer from '../Footer/Footer'
 export default class Home extends Component{
     render(){
         return(
@@ -102,7 +102,60 @@ export default class Home extends Component{
                     </div>
                     <div className="exploreServices"><a>Explore Services</a></div>
                 </div>
-                <div>bert</div>
+                <div className="contactForm">
+                    <div className="formTitle">WORK WITH US</div>
+                    <fieldset id="group1">
+                        <div className="group1">
+                            <div className="group1Title">Tell us what you're looking for: *</div>
+                            <div className="formRow1">
+                                <div>
+                                    <input type="radio" name="group1" value="explore"/>I'd like to explore working with VaynerMedia.
+                                </div>
+                                <div>
+                                    <input type="radio" name="group1" value="press"/>I have a press inquiry for VaynerMedia.
+                                </div>
+                                <div>
+                                    <input type="radio" name="group1" value="brand"/>I'd like to grow my personal brand.
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset id="group2">
+                        <div className="group2">
+                            <div>
+                                <input type="radio" name="group1" value="buisness"/>I'm a small/medium-sized business owner/manager and want help driving growth.
+                            </div>
+                            <div>
+                                <input type="radio" name="group1" value=""/>I'm interested in your <span>one-day digital consulting & immersion session</span>.
+                            </div>
+                            <div>
+                                <input type="radio" name="group1" value=""/>Other
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div className="formInputContainer">
+                        <div className="formInputLeft">
+                            <div>NAME: <span>*</span></div>
+                            <input required type="text" className="normalInput"/>
+                            <div>COMPANY: <span>*</span></div>
+                            <input required type="text" className="normalInput"/>
+                            <div>TELL US ABOUT THE TASK AT HAND: <span>*</span></div>
+                            <input required type="text" className="bert"/>
+                        </div>
+                        <div className="formInputLeft">
+                            <div>EMAIL: <span>*</span></div>
+                            <input required type="text" className="normalInput"/>
+                            <div>PHONE NUMBER: <span>*</span></div>
+                            <input required type="text" className="normalInput"/>
+                        </div>
+                    </div>
+                    <div className="emailList">
+                        <input type="checkbox"/>
+                        <div><span>* </span> Yes, I'd also like to receive information about additional products or services that may be of interest to me. Information submitted <br/>through this form is subject to our Privacy Policy</div>
+                    </div>
+                    <div className="formSubmit">Submit</div>
+                </div>
+                <Footer/>
             </div>
         )
     }
