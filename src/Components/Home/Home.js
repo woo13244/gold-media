@@ -5,6 +5,13 @@ import FontAwesome from 'react-fontawesome';
 import {Helmet} from 'react-helmet';
 import Footer from '../Footer/Footer'
 export default class Home extends Component{
+    constructor(){
+        super()
+        this.state={
+            name: '',
+            
+        }
+    }
     render(){
         return(
             <div className="Home">
@@ -14,10 +21,10 @@ export default class Home extends Component{
                 <Header/>
                 <div className="homeVideo">
                     <div className="homeVideoText">We’re a full-service digital agency built for the now. We partner with clients to drive their business <br/>outcomes with best-in-class <span>modern video production, media planning & distribution, influencer marketing, Google & Alexa voice services</span>, and everything <span>in <br/>between</span>.</div>
-                    <div className="homeVideoLink"><a src="#">Watch Budweiser's amazing YouTube Ad of the Year 2016</a></div>
+                    <div className="homeVideoLink"><a src="#">Become A Client</a></div>
                     <div className="homeArrow"><FontAwesome name=" fa fa-caret-down fa-2x" style={{color: 'white'}}/></div>
                 </div>
-                <div className="homeRecentWork">
+                {/* <div className="homeRecentWork">
                     <div className="recentWorkTitle">RECENT WORK</div>
                     <div className="recentWorkExamples">
                         <div className="exampleOne">
@@ -36,10 +43,10 @@ export default class Home extends Component{
                                 <div>Drive awareness and trial of STAINMASTER carpet care products nationally to establish the STAINMASTER brand as a top 3 brand in the category.</div>
                             </div>
                         </div>
-                    </div>
-                    <div className="moreExamplesLink"><a>There's Plenty More</a></div>
-                </div>
-                <div className="clientsList">
+                    </div> */}
+                    {/* <div className="moreExamplesLink"><a>There's Plenty More</a></div>
+                </div> */}
+                {/* <div className="clientsList">
                     <div className="clientListTitle">SOME OF OUR CLIENTS</div>
                     <div className="clientLogoList">
                         <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/15192659/ABInBev.png"/>
@@ -55,7 +62,7 @@ export default class Home extends Component{
                         <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/15204351/Unilever2.png"/>
                         <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/15192710/Johnsons.png"/>
                     </div>
-                </div>
+                </div> */}
                 <div className="servicesList">
                     <div className="serviceListTitle">OUR SERVICES</div>
                     <div className="serviceLogoList">
@@ -91,18 +98,10 @@ export default class Home extends Component{
                             <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/16194438/beta-4.png"/>
                             <div>VaynerBeta</div>
                         </div>
-                        <div>
-                            <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/05/11194709/4ds.png"/>
-                            <div>4Ds</div>
-                        </div>
-                        <div>
-                            <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/08/07151844/Experience-icon.png"/>
-                            <div>VaynerExperience</div>
-                        </div>
                     </div>
                     <div className="exploreServices"><a>Explore Services</a></div>
                 </div>
-                <div className="contactForm">
+                <div className="contactForm" id="becomeAClient">
                     <div className="formTitle">WORK WITH US</div>
                     <fieldset id="group1">
                         <div className="group1">

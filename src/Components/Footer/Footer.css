@@ -43,3 +43,15 @@
     justify-content: center;
     margin-top: 70px
 }
+
+@media(max-width: 375px){
+    .footerLeft{
+        font-size: 12px
+    }
+    .footerMid div{
+        font-size: 10px
+    }
+    .footerRight{
+        display: none
+    }
+}

@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
 
 .Header{
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid #dddddd;
     height:60px;
     display: flex;
@@ -22,11 +23,16 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: bold;
-    cursor: pointer
+    cursor: pointer;
+    color: black;
+}
+.logo:hover{
+    text-decoration: none;
+    color: black
 }
 .logo span{
     color: gold;
-    font-family: 'Bungee', cursive;
+    font-family: 'Russo One',;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     
 }
@@ -34,13 +40,14 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width:600px;
+    width: 60%;
     color: #2a2a2a;
     font-size:16px;
     font-weight: bold
 }
 .headerContent div{
-    margin-left:25px
+    margin-left:25px;
+
 }
 .headerContent div a{
     color: #2a2a2a;
@@ -51,11 +58,15 @@
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     border: 2px solid #202020;
-    padding: 3px 10px 3px 10px;
+    width: 200px;
+    text-align: center;
     border-radius: 20px 20px 20px 20px;
     margin-right: 50px;
-    cursor: pointer
-    
+    cursor: pointer;
+    color: black
+}
+.becomeAClient:hover{
+    text-decoration: none
 }
 .contactForm{
     display:flex;
@@ -172,4 +183,21 @@
     border-radius: 15px 15px 15px 15px;
     padding: 2px 25px 2px 25px;
     margin: 80px 0px 60px 0px
+}
+
+
+@media(max-width: 375px){
+    .logo{
+        font-size: 20px;
+        margin-right: 0px;
+        padding-right: 0px
+    }
+    .headerContent{
+        display: none
+    }
+    .menuBar{
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
 }

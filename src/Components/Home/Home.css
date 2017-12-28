@@ -5,12 +5,12 @@
     align-items: center;
     /* border: 2px solid red; */
     width:100%;
-    margin-top: 60px
+    margin-top: 60px;
 }
 .homeVideo{
     width: 100%;
     height: 730px;
-    background-image: url("https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/13173619/harry-caray-gif-32-half-frames.gif");
+    background-image: url("http://i.imgur.com/h0uAF0i.gif");
     background-size: 100%;
     display: flex;
     flex-direction: column;
@@ -54,11 +54,14 @@
     margin-top: 40px;
 }
 .homeRecentWork{
-    width: 85%;
+    width: 100%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    background: #dddddd
 }
 .recentWorkTitle{
     font-size: 40px;
@@ -76,7 +79,7 @@
 .exampleOneDetails{
     padding-left: 20px;
     margin-top: 20px;
-    border-left: 2px solid #efeed8
+    border-left: 2px solid
 }
 .exampleOneDetails div{
     margin-bottom: 15px
@@ -159,6 +162,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
+    background-color: white
 }
 .serviceListTitle{
     font-size: 40px;
@@ -201,4 +205,45 @@
     color: rgb(255, 0, 179);;
     font-weight: bolder;
     font-size: 18px;
+}
+
+@media(max-width: 375px){
+    .exampleTitleGrey{
+        font-size: 10px
+    }
+    .homeVideoText{
+        font-size: 20px;
+        line-height:20px
+    }
+    .homeVideoLink{
+        width: 200px
+    }
+    
+    .formTitle{
+        font-size: 20px
+    }
+    .group1 div{
+        font-size: 10px
+    }
+    .group2 div{
+        font-size: 10px
+    }
+    .formInputContainer{
+        font-size: 10px
+    }
+    .normalInput{
+        width: 100px
+    }
+    .serviceListTitle{
+        font-size: 21px
+    }
+    .serviceLogoList div div{
+        font-size: 10px
+    }
+    .exampleOneImage{
+        margin-left: none
+    }
+    .clientListTitle{
+        font-size: 20px
+    }
 }
