@@ -198,7 +198,8 @@
     border-radius: 20px 20px 20px 20px;    
     padding: 5px 25px 5px 25px;
     margin-top: 35px;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    cursor: pointer;
 }
 .exploreServices a{
     font-style: none;
@@ -211,9 +212,15 @@
     .exampleTitleGrey{
         font-size: 10px
     }
+    .homeVideo{
+        height: 500px;
+        background-size: 300%
+    }
     .homeVideoText{
         font-size: 20px;
-        line-height:20px
+        line-height:20px;
+        margin-top: 70px;
+        margin-bottom: 70px
     }
     .homeVideoLink{
         width: 200px
@@ -223,27 +230,48 @@
         font-size: 20px
     }
     .group1 div{
-        font-size: 10px
+        font-size: 9px
     }
     .group2 div{
-        font-size: 10px
+        font-size: 9px
+    }
+    .group2{
+        margin-bottom: 0px
     }
     .formInputContainer{
-        font-size: 10px
+        font-size: 10px;
+    }
+    .formInputContainer div{
+        margin-top: 10px
     }
     .normalInput{
-        width: 100px
+        width: 100px;
+        height: 25px
     }
     .serviceListTitle{
         font-size: 21px
     }
     .serviceLogoList div div{
-        font-size: 10px
+        font-size: 8px
     }
     .exampleOneImage{
         margin-left: none
     }
     .clientListTitle{
         font-size: 20px
+    }
+    .exploreServices{
+        margin-bottom: 0px
+    }
+    .bert{
+        height: 75px;
+        margin-top: 10px
+    }
+    .emailList{
+        font-size: 13px
+    }
+    .formSubmit{
+        margin-top: 25px;
+        margin-bottom: 25px
     }
 }

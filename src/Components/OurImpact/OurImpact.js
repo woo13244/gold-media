@@ -1,7 +1,7 @@
 import React , {Component} from 'react'
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import './OurImpact.css'
+import SecondFooter from '../SecondFooter/SecondFooter';
+import './OurImpact.css';
 
 
 export default class OurImpact extends Component{
@@ -20,7 +20,7 @@ export default class OurImpact extends Component{
                         <div className="wpx1"><p>CONSULTING</p><br/>We are a strategy and operations consultancy. If you’re good, we can help you get great. If you’re just starting a new initiative, we will show you the way. Our team is a full-service digital agency that lets you imagine, build, test and launch new business and digital marketing models that will succeed.</div>
                     </div>
                 </div>
-                <Footer/>
+                <SecondFooter/>
             </div>
         )
     }

@@ -1,6 +1,6 @@
 import React , {Component} from 'react';
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer'
+import SecondFooter from '../SecondFooter/SecondFooter'
 import './AboutUs.css'
 
 export default class AboutUs extends Component{
@@ -10,7 +10,7 @@ export default class AboutUs extends Component{
                 <Header />
                 <div className="aboutusContent" style={{marginTop: '60px'}}>
                     <div className="aboutusVideoOne">
-                        <div>We Create Brand <br/>Value</div>
+                        <div className="aboutusVideoOneText">We Create Brand <br/>Value</div>
                     </div>
                     <div className="aboutusTextContainer">
                         <div className="aboutusText">
@@ -47,7 +47,7 @@ export default class AboutUs extends Component{
                         <div>KEVIN KIM | FOUNDER</div>
                     </div>
                 </div>
-                <Footer/>
+                <SecondFooter/>
             </div>
         )
     }

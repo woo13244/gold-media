@@ -3,14 +3,40 @@ import Header from '../Header/Header';
 import './Home.css';
 import FontAwesome from 'react-fontawesome';
 import {Helmet} from 'react-helmet';
-import Footer from '../Footer/Footer'
+import SecondFooter from '../SecondFooter/SecondFooter';
+import axios from 'axios';
+import {HashLink as Slink} from 'react-router-hash-link'
 export default class Home extends Component{
     constructor(){
         super()
         this.state={
+            subject: '',
             name: '',
-            
+            company: '',
+            email: '',
+            phone: '',
+            task: '',
+            emailList: false
         }
+    }
+    radioButton(x){
+        this.setState({
+            subject: x
+        },()=>{
+            console.log(this.state.subject)
+        })
+    }
+
+    submitForm(){
+        axios.post('/submitform', {
+            subject: this.state.subject,
+            name: this.state.name,
+            company: this.state.company,
+            email: this.state.email,
+            phone: this.state.phone,
+            task: this.state.task,
+            emailList: this.state.emailList
+        },()=>{'posted on client side'})
     }
     render(){
         return(
@@ -20,8 +46,8 @@ export default class Home extends Component{
                 </Helmet>
                 <Header/>
                 <div className="homeVideo">
-                    <div className="homeVideoText">We’re a full-service digital agency built for the now. We partner with clients to drive their business <br/>outcomes with best-in-class <span>modern video production, media planning & distribution, influencer marketing, Google & Alexa voice services</span>, and everything <span>in <br/>between</span>.</div>
-                    <div className="homeVideoLink"><a src="#">Become A Client</a></div>
+                    <div className="homeVideoText">We are a fully integrated, results-driven digital marketing agency built for the now. We partner with clients & brands to achieve their business goals with best-in-class <span>social media planning / distribution, influencer marketing, marketing</span> & <span>brand development</span>, and<span> everything in between.</span></div>
+                    <div className="homeVideoLink"><Slink to='/#becomeAClient'>Become A Client</Slink></div>
                     <div className="homeArrow"><FontAwesome name=" fa fa-caret-down fa-2x" style={{color: 'white'}}/></div>
                 </div>
                 {/* <div className="homeRecentWork">
@@ -72,7 +98,7 @@ export default class Home extends Component{
                         </div>
                         <div>
                             <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/10202353/paid-media-icon.png"/>
-                            <div>Paid Media</div>
+                            <div>FacbookAdvertising</div>
                         </div>
                         <div>
                             <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/10202349/influencers-icon.png"/>
@@ -80,7 +106,7 @@ export default class Home extends Component{
                         </div>
                         <div>
                             <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/16001720/vsmart.png"/>
-                            <div>VaynerSmart</div>
+                            <div>WebDevelopment</div>
                         </div>
                         <div>
                             <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/10202344/ecom-icon.png"/>
@@ -88,18 +114,18 @@ export default class Home extends Component{
                         </div>
                         <div>
                             <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/10202401/solutions-icon.png"/>
-                            <div>VaynerSolutions</div>
+                            <div>AmazonSolutions</div>
                         </div>
                         <div>
                             <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/10202405/talent-icon.png"/>
-                            <div>VaynerTalent</div>
+                            <div>GoldTalent</div>
                         </div>
                         <div>
                             <img src="https://s3.amazonaws.com/vm.com-2017/wp-content/uploads/2017/02/16194438/beta-4.png"/>
-                            <div>VaynerBeta</div>
+                            <div>GoldBeta</div>
                         </div>
                     </div>
-                    <div className="exploreServices"><a>Explore Services</a></div>
+                    <div className="exploreServices"><Slink to="/#becomeAClient">Explore Services</Slink></div>
                 </div>
                 <div className="contactForm" id="becomeAClient">
                     <div className="formTitle">WORK WITH US</div>
@@ -108,13 +134,13 @@ export default class Home extends Component{
                             <div className="group1Title">Tell us what you're looking for: *</div>
                             <div className="formRow1">
                                 <div>
-                                    <input type="radio" name="group1" value="explore"/>I'd like to explore working with VaynerMedia.
+                                    <input type="radio" name="group1" value="explore" onClick={()=>{this.radioButton("I'd like to explore working with GoldMedia")}}/>I'd like to explore working with GoldMedia.
                                 </div>
                                 <div>
-                                    <input type="radio" name="group1" value="press"/>I have a press inquiry for VaynerMedia.
+                                    <input type="radio" name="group1" value="press" onClick={()=>{this.radioButton("I have a press inquiry for GoldMedia")}}/>I have a press inquiry for GoldMedia.
                                 </div>
                                 <div>
-                                    <input type="radio" name="group1" value="brand"/>I'd like to grow my personal brand.
+                                    <input type="radio" name="group1" value="brand" onClick={()=>{this.radioButton("I'd like to grow my personal brand")}}/>I'd like to grow my personal brand.
                                 </div>
                             </div>
                         </div>
@@ -122,39 +148,41 @@ export default class Home extends Component{
                     <fieldset id="group2">
                         <div className="group2">
                             <div>
-                                <input type="radio" name="group1" value="buisness"/>I'm a small/medium-sized business owner/manager and want help driving growth.
+                                <input type="radio" name="group1" value="buisness" onClick={()=>{this.radioButton("I'm a small/medium-sized business owner/manager and want help driving growth.")}}/>I'm a small/medium-sized business owner/manager and want help driving growth.
                             </div>
                             <div>
-                                <input type="radio" name="group1" value=""/>I'm interested in your <span>one-day digital consulting & immersion session</span>.
+                                <input type="radio" name="group1" value="consulting" onClick={()=>{this.radioButton("I'm interested in your one-day digital consulting & immersion session")}}/>I'm interested in your <span>one-day digital consulting & immersion session</span>.
                             </div>
                             <div>
-                                <input type="radio" name="group1" value=""/>Other
+                                <input type="radio" name="group1" value="other" onClick={()=>{this.radioButton("Other")}}/>Other
                             </div>
                         </div>
                     </fieldset>
                     <div className="formInputContainer">
                         <div className="formInputLeft">
                             <div>NAME: <span>*</span></div>
-                            <input required type="text" className="normalInput"/>
+                            <input required type="text" className="normalInput" onChange={(e)=>{this.setState({name : e.target.value},()=>{console.log(this.state.name)})}}/>
                             <div>COMPANY: <span>*</span></div>
-                            <input required type="text" className="normalInput"/>
+                            <input required type="text" className="normalInput" onChange={(e)=>{this.setState({company : e.target.value},()=>{console.log(this.state.company)})}}/>
                             <div>TELL US ABOUT THE TASK AT HAND: <span>*</span></div>
-                            <input required type="text" className="bert"/>
+                            {/* {<input required type="text" className="bert" onChange={(e)=>{this.setState({task : e.target.value},()=>{console.log(this.state.task)})}}/>} */}
+                            <textarea name="input_20" id="input_2_20" class="textarea medium" className="bert" aria-invalid="false" rows="10" cols="50"></textarea>
+                            {/* <textarea rows="4" cols="50" wrap='soft' className='bert' onChange={(e)=>{this.setState({task : e.target.value},()=>{console.log(this.state.task)})}}></textarea> */}
                         </div>
                         <div className="formInputLeft">
                             <div>EMAIL: <span>*</span></div>
-                            <input required type="text" className="normalInput"/>
+                            <input required type="text" className="normalInput" onChange={(e)=>{this.setState({email : e.target.value},()=>{console.log(this.state.email)})}}/>
                             <div>PHONE NUMBER: <span>*</span></div>
-                            <input required type="text" className="normalInput"/>
+                            <input required type="text" className="normalInput" onChange={(e)=>{this.setState({phone : e.target.value},()=>{console.log(this.state.phone)})}}/>
                         </div>
                     </div>
                     <div className="emailList">
-                        <input type="checkbox"/>
+                        <input type="checkbox" onClick={()=>{this.setState({emailList: !this.state.emailList},()=>{console.log(this.state.emailList)})}}/>
                         <div><span>* </span> Yes, I'd also like to receive information about additional products or services that may be of interest to me. Information submitted <br/>through this form is subject to our Privacy Policy</div>
                     </div>
-                    <div className="formSubmit">Submit</div>
+                    <div className="formSubmit" onClick={()=>{this.submitForm()}}>Submit</div>
                 </div>
-                <Footer/>
+                <SecondFooter/>
             </div>
         )
     }

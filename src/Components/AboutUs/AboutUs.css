@@ -12,9 +12,9 @@ aboutusContent{
     align-items: center
 }
 .aboutusVideoOne{
-    height: 600px;
+    height: 700px;
     width: 100%;
-    background-image: url('https://78.media.tumblr.com/1024caa4f15353c4f656f7340c1717d5/tumblr_olib3aSbvS1vqvqeeo1_500.gif');
+    background-image: url('https://cdn.dribbble.com/users/391028/screenshots/1460022/dribbble_final.gif');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ aboutusContent{
     text-align: center;
     font-weight: bolder;
     color: gold;
-    opacity: .7;
+    opacity: .85;
     text-shadow: -1px 0 #000, 0 3px #000, 3px 0 #000, 0 -1px #000;
 }
 .aboutusTextContainer{
@@ -86,7 +86,8 @@ aboutusContent{
     align-items: center;
     flex-direction: column;
     color: white;
-    font-size: 13px
+    font-size: 13px;
+    margin-bottom: 75px
 }
 .videoTwoTitle{
     text-align: center;
@@ -95,4 +96,42 @@ aboutusContent{
     font-weight: bolder;
     opacity: .8;
     margin-bottom: 20px
+}
+@media(max-width: 375px){
+    .aboutusVideoOne{
+        background-size: 100%;
+        height: 350px
+    }
+    .aboutusVideoOne div{
+        font-size: 40px
+    }
+    .aboutusTextContainer{
+        margin-bottom: 30px
+    }
+    .aboutusText{
+        font-size: 15px;
+        width: 70%;
+        padding-top: 70px
+    }
+    .missionTitle{
+        font-size: 25px;
+        margin-bottom: 20px
+    }
+    .goalsTitle{
+        font-size: 25px;
+        margin-top: 45px;
+        margin-bottom: 20px
+    }
+    .goalsListItem {
+        display: none
+    }
+    .aboutusVideoTwo{
+        background-size: 100%;
+        height: 350px;
+        font-size: 12px;
+        margin-bottom: 0px
+    }
+    .videoTwoTitle{
+        font-size: 40px
+    }
 }

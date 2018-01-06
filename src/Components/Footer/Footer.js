@@ -26,10 +26,7 @@ export default class Footer extends Component{
                 <div className="footerRight">
                     <FontAwesome name="facebook fa-lg" style={{color: 'white', marginRight: '15px'}}/>
                     <FontAwesome name="twitter fa-lg" style={{color: 'white', marginRight: '15px'}}/>
-                    <FontAwesome name="snapchat fa-lg" style={{color: 'white', marginRight: '15px'}}/>
                     <FontAwesome name="instagram fa-lg" style={{color: 'white', marginRight: '15px'}}/>
-                    <FontAwesome name="pinterest-p fa-lg" style={{color: 'white', marginRight: '15px'}}/>
-                    <FontAwesome name="linkedin fa-lg" style={{color: 'white', marginRight: '15px'}}/>
                 </div>
             </div>
         )

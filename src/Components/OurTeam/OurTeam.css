@@ -43,37 +43,143 @@
     font-weight: bold;
     padding-bottom: 20px
 }
-.emilyContainer{
+.frankContainer{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 200px
 }
-.emilyPic{
+.frankPic{
     width:50%;
-    height: 490px;
-    background-image: url('https://static1.squarespace.com/static/59c3e56db1ffb6d7ac790353/t/59c3fdaecf81e0567c712205/1458588094125/?format=500w');
+    height: 400px;
+    background-image: url('https://pbs.twimg.com/profile_images/887362459643904000/t9-14qHg.jpg');
     background-size: 100%;
     background-position: center;
 
 }
-.emilyText{
+.frankText{
     width: 46%;
 }
-.emilyName{
+.frankName{
     font-size: 30px;
     font-weight: bold;
     color: rgb(56, 56, 56);
     padding-bottom: 20px;
 }
-.emilyPosition{
+.frankPosition{
     font-size: 18px;
     color: #888888;
     font-weight: bold;
     padding-bottom: 20px
 }
-.emilyQuote{
+.frankQuote{
+    color: #999999;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px
+}
+.gavinContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 200px
+}
+.gavinPic{
+    width:50%;
+    height: 400px;
+    background-image: url('http://northjerseysports.com/images/baseball/2014/052814RFieldEmersonP3.jpg');
+    background-size: 100%;
+    background-position: center;
+
+}
+.gavinText{
+    width: 46%;
+}
+.gavinName{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    padding-bottom: 20px;
+}
+.gavinPosition{
+    font-size: 18px;
+    color: #888888;
+    font-weight: bold;
+    padding-bottom: 20px
+}
+.gavinQuote{
+    color: #999999;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px
+}
+.wooContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 200px
+}
+.wooPic{
+    width:50%;
+    height: 400px;
+    background-image: url('http://s3.amazonaws.com/rapgenius/1378864003_ric%20flair%20woo.jpg');
+    background-size: 100%;
+    background-position: center;
+}
+.wooText{
+    width: 46%;
+}
+.wooName{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    padding-bottom: 20px;
+}
+.wooPosition{
+    font-size: 18px;
+    color: #888888;
+    font-weight: bold;
+    padding-bottom: 20px
+}
+.wooQuote{
+    color: #999999;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px
+}
+.anthonyContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 200px
+}
+.anthonyPic{
+    width:50%;
+    height: 400px;
+    background-image: url('./image1 (1).jpeg');
+    background-size: 100%;
+    background-position: center;
+}
+.anthonyText{
+    width: 46%;
+}
+.anthonyName{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    padding-bottom: 20px;
+}
+.anthonyPosition{
+    font-size: 18px;
+    color: #888888;
+    font-weight: bold;
+    padding-bottom: 20px
+}
+.anthonyQuote{
     color: #999999;
     font-size: 16px;
     line-height: 30px;
