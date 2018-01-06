@@ -13,7 +13,6 @@
     flex-direction: column
 }
 .ourImpactVideo{
-    margin-top: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -31,12 +30,12 @@
     font-weight: bold
 }
 .ourImpactContent{
-    width: 50%;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-content: flex-start;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 90px;
     color: #999999;
     font-size: 15px;
     margin-bottom: 100px;
@@ -54,4 +53,28 @@
 }
 .wpx1{
     margin-bottom: 50px
+}
+@media(max-width: 375px){
+    .ourImpactVideo{
+        background-size: 200%;
+        height: 400px
+    }
+    .ourImpactVideo div{
+        font-size: 38px
+    }
+    .ourImpactContent{
+        margin-top: 55px;
+        margin-bottom: 50px
+    }
+    .howTitle{
+        font-size: 30px
+    }
+    .wpx1{
+        font-size: 15px;
+        margin-bottom: 35px
+    }
+    .ourImpactContent div p{
+        margin-bottom: 0px;
+        text-decoration: underline
+    }
 }

@@ -3,212 +3,114 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
 @import url('https://fonts.googleapis.com/css?family=Vesper+Libre');
 .Header{
-    width: 100vw;
-    border-bottom: 1px solid #dddddd;
-    height:60px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0px 10px 0px;
-    position: fixed;
-    top: 0px;
-    z-index: 2;
-    background: white
-}
-.logo{
-    margin-left:100px;
-    width:200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Vesper Libre', sans-serif;
-    font-size: 30px;
-    cursor: pointer;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #fdfdfd;
+    border-bottom: 2px solid #d4d4d4;
+    z-index: 2
+}
+.bert{
+    color: black
+}
+.bert:hover{
+    text-decoration: none;
+    color: black
+}
+.headerContainer{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 10px 0px
+}
+.headerLogo{
+    width:50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+.logo{
+    color: black;
+}
+.logo:hover{
     color: black;
     text-decoration: none
 }
-.logo:hover{
-    text-decoration: none;
-    color: black
-}
-.logo:visited{
-    text-decoration: none;
-    color:black
-}
-.logo:active{
+.headerLogo:hover{
+    color: black;
     text-decoration: none
 }
-.logo:focus{
-    text-decoration: none
+.headerLogo span{
+    color: gold
 }
-.logo span{
-    color: gold;
-    font-family: 'Vesper Libre', sans-serif;    
-}
-.headerContent{
-    display:flex;
-    justify-content: center;
+.headerLeft{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    width: 60%;
-    color: #2a2a2a;
-    font-size:16px;
-    font-weight: bold
 }
-.headerContent div{
-    margin-left:25px;
-
-}
-.headerContent div a{
-    color: #2a2a2a;
-    text-decoration: none;
-    cursor: pointer;
+.headerLeft div{
+    font-size: 17px;
+    margin-right: 20px;
 }
 .becomeAClient{
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    border: 2px solid #202020;
-    width: 200px;
-    text-align: center;
+    border: 2px solid #414141;
+    padding: 2px 10px 2px 10px;
     border-radius: 20px 20px 20px 20px;
-    margin-right: 50px;
-    cursor: pointer;
     color: black
 }
 .becomeAClient:hover{
+    color: black;
     text-decoration: none
 }
-.contactForm{
-    display:flex;
+.menuContainer{
+    display: none
+}
+.menuRetract{
+    display: none
+}
+.menuExtension{
+    display: flex;
     justify-content: center;
     align-items: center;
-    width:100%;
     flex-direction: column;
-    background-color: #dddddd;
-}
-.formTitle{
+    background-color: #3f3f3f;
+    color: white;
     width: 100%;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-    padding: 50px 0px 30px 0px;
-    margin-bottom: 10px
-}
-.fieldsetRow1{
-    width:33%
-}
-.group1{
-    display: flex;
-    width:85vw;
-    font-size: 16px;
-    font-weight: bolder;
-    flex-direction: column
-}
-.group1 div{
-    display: flex;
-    width:100%
-}
-.group1 div div{
-    width: 33%
-}
-.group1Title{
-    width:100%;
-    margin-bottom: 20px
-}
-.formRow1{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px
-}
-.formRow1 div{
-    width: 33%;
-}
-.formRow1 div input{
-    margin-right: 10px
-}
-.group2{
-    display: flex;
-    justify-content: space-between;
-    width:85vw;
-    font-size: 16px;
-    font-weight: bolder;
-}
-.group2 div{
-    width: 33%;
-}
-.group2 div input{
-    margin-right: 10px
-}
-.group2 div span{
-    color: #069BFA
-}
-.formInputContainer{
-    width: 86%;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    font-weight: bold
-}
-.formInputContainer div{
-    margin-top: 25px
-}
-.formInputLeft{
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-}
-.formInputLeft input{
-    /* height: 40px; */
-    border-radius: 5px 5px 5px 5px;
-    padding-left: 10px;
-    color: gray
-}
-.formInputLeft div span{
-    color: darkred
-}
-.normalInput{
-    height: 40px;
-}
-.bert{
-    height: 150px;
-    margin-top: 15px
-}
-.emailList{
-    display: flex;
-    width: 85%;;
-    margin-top: 25px;
-    font-size: 16px
-}
-.emailList input{
-    margin-right: 10px
-}
-.emailList div span{
-    color: darkred
-}
-.formSubmit{
-    color: #222222;
-    font-size: 18px;
-    font-weight: bold;
-    border: 2px solid #222222;
-    border-radius: 15px 15px 15px 15px;
-    padding: 2px 25px 2px 25px;
-    margin: 80px 0px 60px 0px;
-}
-.formSubmit:hover{
-    cursor: pointer
 }
 
+.menuExtension div{
+    padding: 15px ;
+
+}
 @media(max-width: 375px){
-    .logo{
-        font-size: 20px;
-        margin-right: 0px;
-        padding-right: 0px
+    .Header{
+        border-bottom: 1px solid #7e7d7d
     }
-    .headerContent{
-        display: none
+    .headerLeft{
+        display: none;
+        border: 2px solid red
     }
-    .menuBar{
+    .menuContainer{
         display: flex;
-        justify-content: center;
+        width: 50%;
+        justify-content: flex-end;
         align-items: center
+    }
+
+    .headerLogo{
+        font-size: 15px;
+    }
+    .bert{
+        color: white
     }
 }

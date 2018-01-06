@@ -185,3 +185,103 @@
     line-height: 30px;
     margin-bottom: 20px
 }
+
+
+@media(max-width: 375px){
+    .ourTeamContainer{
+        margin-top: 55px;
+        margin-bottom:20px
+    }
+    .kevinContainer{
+        margin-bottom: 50px
+    }
+    .kevinPic{
+        width: 90%;
+        height: 145px;
+    }
+    .kevinName{
+        font-size: 18px;
+        margin-left: 10px
+    }
+    .kevinPosition{
+        font-size: 12px;
+        margin-left: 10px;
+        padding-bottom: 0px
+    }
+    .frankContainer{
+        margin-bottom: 50px
+    }
+    .frankPic{
+        width: 90%;
+        height: 145px;
+    }
+    .frankName{
+        font-size: 18px;
+        margin-left: 10px
+    }
+    .frankPosition{
+        font-size: 12px;
+        margin-left: 10px
+    }
+    .gavinContainer{
+        margin-bottom: 50px;
+    }
+    .gavinPic{
+        width: 90%;
+        height: 145px;
+    }
+    .gavinName{
+        font-size: 18px;
+        margin-left: 10px
+    }
+    .gavinPosition{
+        font-size: 12px;
+        margin-left: 10px
+    }
+    .wooContainer{
+        margin-bottom: 50px
+    }
+    .wooPic{
+        width: 90%;
+        height: 145px;
+    }
+    .wooName{
+        font-size: 18px;
+        margin-left: 10px
+    }
+    .wooPosition{
+        font-size: 12px;
+        margin-left: 10px
+    }
+    .anthonyPic{
+        width: 90%;
+        height: 145px;
+    }
+    .anthonyContainer{
+        margin-bottom: 50px
+    }
+    .anthonyName{
+        font-size: 18px;
+        margin-left: 10px
+    }
+    .anthonyPosition{
+        font-size: 12px;
+        margin-left: 10px
+    }
+    .frankQuote{
+        display: none;
+        padding-bottom: 0px
+    }
+    .gavinQuote{
+        display: none;
+        padding-bottom: 0px
+    }
+    .wooQuote{
+        display: none;
+        padding-bottom: 0px
+    }
+    .anthonyQuote{
+        display: none;
+        padding-bottom: 0px
+    }
+}
