@@ -97,6 +97,56 @@ aboutusContent{
     opacity: .8;
     margin-bottom: 20px
 }
+.aboutUsOff{
+    display: none
+}
+.aboutUsToggle{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutUsToggle1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-around;
+    margin-top: 20px
+    ; 
+}
+.aboutUsToggleButton{
+    color: gold;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+.aboutUsToggleButton:hover{
+    cursor: pointer
+}
+.aboutUsToggleText{
+    color: #999999;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder;
+    width: 60%
+}
+.aboutUsToggleText1{
+    color: #999999;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bolder;
+    width: 60%;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999999
+}
+.aboutUsToggleTitles{
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 12px 0 12px 0    
+}
 @media(max-width: 375px){
     .aboutusVideoOne{
         background-size: 100%;

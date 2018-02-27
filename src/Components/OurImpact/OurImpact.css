@@ -30,16 +30,20 @@
     font-weight: bold
 }
 .ourImpactContent{
-    width: 65%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-content: flex-start;
     flex-direction: column;
     margin-top: 90px;
-    color: #999999;
+    color: black;
     font-size: 15px;
     margin-bottom: 100px;
-    
+}
+.ourImpactText span{
+    color: #fe800a;
+    font-weight: bolder;
+    font-size: 30px
 }
 .howTitle{
     font-size: 35px;
@@ -53,6 +57,35 @@
 }
 .wpx1{
     margin-bottom: 50px
+}
+.ourImpactText{
+    font-size: 23px;
+}
+.stepOneFacebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px
+}
+.targetImage{
+    width: 410px;
+    background-image: url('../Assets/bfc44db06efa4663d197684b50306143.png');
+    background-position: center;
+    background-size: 100%;
+}
+.stepTwoText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20
+}
+.ourImpactChecks{
+    background-color: rgb(78, 78, 78);
+    padding: 70px 20% 70px 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
 }
 @media(max-width: 375px){
     .ourImpactVideo{

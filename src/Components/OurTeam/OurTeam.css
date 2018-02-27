@@ -24,7 +24,7 @@
 .kevinPic{
     width:50%;
     height: 400px;
-    background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAkGAAAAJDkzZDA4YmFiLWQ1MWEtNDhkYS1iMWE2LTg3ZjkyMmI3M2QwYQ.jpg');
+    background-image: url('../Assets/Screen Shot 2018-02-25 at 4.59.29 PM.png');
     background-size: 100%;
     background-position: center
 }
@@ -125,7 +125,7 @@
 .wooPic{
     width:50%;
     height: 400px;
-    background-image: url('http://s3.amazonaws.com/rapgenius/1378864003_ric%20flair%20woo.jpg');
+    background-image: url('../Assets/Screen Shot 2018-02-25 at 4.59.08 PM.png');
     background-size: 100%;
     background-position: center;
 }
@@ -160,7 +160,7 @@
 .anthonyPic{
     width:50%;
     height: 400px;
-    background-image: url('./image1 (1).jpeg');
+    background-image: url('../Assets/image1 (1).jpeg');
     background-size: 100%;
     background-position: center;
 }

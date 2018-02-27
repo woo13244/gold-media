@@ -6,6 +6,10 @@
     /* border: 2px solid red; */
     width:100%;
     margin-top: 60px;
+    top: -60px
+}
+.HomeOff{
+    display: none
 }
 .homeVideo{
     width: 100%;
@@ -19,6 +23,18 @@
     line-height: 55px;
 
 }
+.homeVideo2{
+    width: 100%;
+    height: 650px;
+    background-image: url("http://i.imgur.com/h0uAF0i.gif");
+    background-size: 100%;
+    display: flex;
+    color: gold;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 55px;
+}
 .homeVideoText{
     width: 66%;
     font-size: 34px;
@@ -26,7 +42,15 @@
     font-weight: bolder;
     text-align: center;
     margin-bottom: 130px;
-    margin-top: 140px
+    margin-top: 140px;
+}
+.homeVideoText2{
+    width: 66%;
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 130px;
+    margin-top: 140px;
 }
 .homeVideoLink{
     border: 2px solid gold;
@@ -201,7 +225,7 @@
     margin-bottom: 50px;
     cursor: pointer;
 }
-.exploreServices a{
+.exploreServicesText{
     font-style: none;
     color: rgb(255, 0, 179);;
     font-weight: bolder;
@@ -324,8 +348,41 @@
     padding: 2px 25px 2px 25px;
     margin: 80px 0px 60px 0px
 }
-
-
+.infoPopUp{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+.infoPopUpOff{
+    display: none
+}
+.infoFormContainer{
+    border: 2px solid #efeed8;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black
+}
+.infoFormTitle{
+    font-size: 25px;
+    margin: 25px 0 20px;
+    text-decoration: underline;
+    font-weight: bold
+}
+.infoFormContainer form div{
+    margin-bottom: 15px
+}
+.infoFormButtons button{
+    margin-right: 25px
+}
 @media(max-width: 375px){
     .exampleTitleGrey{
         font-size: 10px
