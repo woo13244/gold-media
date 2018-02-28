@@ -87,6 +87,14 @@
     align-items: center;
     flex-direction: column
 }
+.instagramPicture{
+    background-image: url('../Assets/Screen Shot 2018-02-28 at 12.56.42 PM.png');
+    width: 320px;
+    height: 150px;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 25px
+}
 @media(max-width: 375px){
     .ourImpactVideo{
         background-size: 200%;

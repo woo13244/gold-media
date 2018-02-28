@@ -24,7 +24,7 @@
 .kevinPic{
     width:50%;
     height: 400px;
-    background-image: url('../Assets/Screen Shot 2018-02-25 at 4.59.29 PM.png');
+    background-image: url('../Assets/IMG_1041.jpg');
     background-size: 100%;
     background-position: center
 }
@@ -152,12 +152,12 @@
 }
 .anthonyContainer{
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 200px
 }
-.anthonyPic{
+/* .anthonyPic{
     width:50%;
     height: 400px;
     background-image: url('../Assets/image1 (1).jpeg');
@@ -184,7 +184,7 @@
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 20px
-}
+} */
 
 
 @media(max-width: 375px){
